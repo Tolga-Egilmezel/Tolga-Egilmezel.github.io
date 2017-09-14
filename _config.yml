@@ -1,0 +1,19 @@
+baseurl: ""
+url: "https://tolga.egilmezel.com"
+
+# Build settings
+markdown: kramdown
+theme: tolga
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+  style: compressed
+compress_html:
+  clippings: [div, p, ul, td, h1, h2]
+  comments: ["<!-- ", " -->"]
+  blanklines: true
+  profile: false
+  startings: [html, head, body]
