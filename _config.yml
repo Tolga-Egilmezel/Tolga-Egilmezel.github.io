@@ -1,10 +1,10 @@
 baseurl: ""
-url: "https://tolga.egilmezel.com"
+url: "http://tolga.egilmezel.com"
 
 # Build settings
 markdown: kramdown
 theme: tolga
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile

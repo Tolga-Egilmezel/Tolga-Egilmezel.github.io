@@ -1,0 +1,33 @@
+$rem-baseline: 16;
+
+@mixin text-font {
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+	text-rendering: optimizeLegibility;
+	font-smooth: always;
+	font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin number-font {
+	font-family: Arial;
+}
+
+@mixin font-size($size: $rem-baseline, $line: $size * 1.6) {
+	font-size: $size + px;
+  font-size: ($size / $rem-baseline) + rem;
+  line-height: ($line) + px;
+  line-height: ($line / $rem-baseline) + rem;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+html {
+  font-size: $rem-baseline + px;
+  @include text-font;
+}

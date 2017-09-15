@@ -1,0 +1,51 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+main {
+	display: grid;
+ 	justify-items: space-between;
+	align-items: stretch;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: $bgcolor;
+	color: $textcolor;
+}
+
+
+section {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 0;
+	h1 {
+		grid-area: 4 / 4 / 4 / 6;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		font-size: 32px;
+		font-weight: 100;
+		letter-spacing: .8px;
+		text-transform: uppercase;
+	}
+	p {
+		grid-area: 5 / 4 / 5 / 8;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: .8px;
+	}
+}
